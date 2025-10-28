@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бидний бүтээл</title>
+
+    <!-- Font Awesome CDN холбоос -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Гадны CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./buteel.css" />
+    <link rel="stylesheet" href="blog.css" />
+
+    <!-- JQuery CDN холбоос -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Навигацийн хэсэг -->
+    <nav>
+      <img src="img/favicon.ico" class="logo" alt="" />
+
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" >Нүүр Хуудас</a></li>
+				<li><a href="buteel.html"class="active">Бүтээлийн танилцуулга</a></li>
+				<li><a href="course-inner.html">Хичээлийн тухай</a></li>
+				<li><a href="contact.html">Холбоо барих</a></li>
+        </ul>
+
+        <img src="img/menu.png" id="menu-btn" alt="" />
+      </div>
+    </nav>
+    
+    <section id="about-home">
+      <h2>Блог.</h2>
+    </section>
+    
+    <section id="blog-container">
+      <div class="blogs">
+        <div class="post">
+          <img src="img/dalavc.jpg" alt="" style="height: 700px;" />
+          <h3>Сахиусан тэнгэрийн далавч</h3>
+          <p>
+            Энэхүү далавчийг хийхэд цэцгийн боодол, эсгий 2-ыг хэлбэрт оруулж хайчлаад бүтээсэн.
+          </p>
+          <a href="post.html">Дэлгэрэнгүй унших</a>
+        </div>
+
+        <div class="post">
+          <img src="img/plaj.jpg" alt="" />
+          <h3>LED strip плаж</h3>
+          <p>
+           Энэхүү плаж нь гэрэл асах ба плажийг илүү өнгөлөг цоглог гоё болгож өгнө.
+          </p>
+          <a href="post1.html">Дэлгэрэнгүй унших</a>
+        </div>
+
+        <div class="post">
+          <img src="img/yubka.jpg" alt="" />
+          <h3>Эргэдэг навчин юпка</h3>
+          <p>
+            Юпкагийг хөөсөнцөрдүү материалаар хийж, нийлүүлсэн.
+          </p>
+          <a href="post2.html">Дэлгэрэнгүй унших</a>
+        </div>
+
+        <div class="post">
+          <img src="img/flower.jpg" alt="" style="height: 700px;" />
+          <h3>Цэцгэн малгай</h3>
+          <p>
+            Энэхүү төсөл нь 3D малгайг хиймэл цэцэгсээр хөдөлгөөнд оруулсан төсөл юм.
+          </p>
+          <a href="post3.html">Дэлгэрэнгүй унших</a>
+        </div>
+
+          <div class="post">
+          <img src="img/jacket.jpg" alt="" style="height: 700px;" />
+          <h3>Дээл</h3>
+          <p>
+            Энэ дээлийг бүтээхдээ ханцуй дээр нэмэлт даавуу оёж тогтоон байрлуулсан.
+          </p>
+          <a href="post4.html">Дэлгэрэнгүй унших</a>
+        </div>
+
+      </div>
+
+      <div class="cate">
+        <h2>Категориуд</h2>
+        <hr />
+        <a href="#">Вэб хөгжүүлэлт</a>
+        <hr />
+        <a href="#">Вэб дизайн</a>
+        <hr />
+        <a href="#">Апп хөгжүүлэлт</a>
+        <hr />
+        <a href="#">Фронтэнд вэб</a>
+        <hr />
+        <a href="#">IoT төсөл</a>
+        <hr />
+        <a href="#">Google Doc</a>
+      </div>
+    </section>
+    <!-- Блогийн агуулга дуусна -->
+
+   
+
+    <script>
+      // Менюг харуулах
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      // Менюг хаах
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
